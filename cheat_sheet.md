@@ -18,9 +18,10 @@ Brownie provides ganache-cli development environment.
 ## Local Mainnet Fork
 First set environment variable 
 > export WEB3_INFURA_PROJECT_ID=YourProjectID
+Run following command to connect local fork
 > brownie console --network mainnet-fork
 
-## Vyper Cheetsheet
+## Vyper
 Use event
 > event eventName:
 >   value: uint256
@@ -31,11 +32,9 @@ In the function
 In the console, after calling function, add .info()
 > contract.funct().info()
 
-
 ## Uniswap Router Contract interaction 
 getAmountsOut(amountIn, path)
 swapExactTokensForTokens(amountIn, amountOutMin, path, address to, deadline)
 
 To swap using a Router, first grant approval for that input token to that Router address, such as 
 xxx.approve(router.address, AMOUNT, {'from': ACCOUNT })
-
