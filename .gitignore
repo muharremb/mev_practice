@@ -1,4 +1,5 @@
 venv
 *.env
 .vscode
-cheat_sheet.md
+ankr_test.py
+.DS_Store
